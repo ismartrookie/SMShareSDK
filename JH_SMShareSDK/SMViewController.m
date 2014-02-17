@@ -57,6 +57,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
     ShareType shareType;                                //分享类型
     ShareConType shareConType = SCON_APP;               //分享内容类型
     

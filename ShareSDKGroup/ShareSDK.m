@@ -55,6 +55,9 @@
  ***/
 - (BOOL)isSurportWithType:(ShareType)sharetype
 {
+    /**
+     *  QQApi 不做是否安装判断，在没有安装相应软件的情况下会自动跳转至Safari
+     */
     switch (sharetype) {
         case S_SINA: {
             if (![WeiboSDK isWeiboAppInstalled]) {
@@ -85,16 +88,17 @@
         }
             break;
         case S_QQ: {
-            if (![TencentOAuth iphoneQQInstalled]) {
-                return NO;
-            }
+                                        //if (![TencentOAuth iphoneQQInstalled]) {
+                                        //[[ShareSDK shareInstance] shareByQQWith:nil andScene:0];
+                                        //return NO;
+                                        //}
         }
             break;
         case S_QZone: {
-            if (![TencentOAuth iphoneQQInstalled]) {
-                [QQApi isQQInstalled];
-                return NO;
-            }
+                                        //if (![TencentOAuth iphoneQQInstalled]) {
+                                        //[[ShareSDK shareInstance] shareByQQWith:nil andScene:0];
+                                        //return NO;
+                                        //}
         }
             break;
         default:
@@ -178,6 +182,7 @@
             [request setHTTPMethod:@"POST"];
             [request setTimeoutInterval:10];
             NSString *bodyReq = [NSString stringWithFormat:@"{\"appId\":\"%@\"}",[ShareSDK shareInstance].appId];
+            NSLog(@"bodyReq  = %@",bodyReq);
             [request setValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
             [request setHTTPBody:[bodyReq dataUsingEncoding:NSUTF8StringEncoding]];
             AFJSONRequestOperation *jsonReq = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
@@ -301,7 +306,6 @@
             NSLog(@"infoDict = %@", infoDict);
             NSString*appName =[infoDict objectForKey:@"CFBundleDisplayName"];
             
-            
             NewsShareObject *newShareContent = content;
             WBImageObject *image = [WBImageObject object];
             image.imageData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"icon" ofType:@"png"]];
@@ -320,7 +324,9 @@
 
 - (void)shareByQQWith:(id)content andScene:(NSInteger)scene
 {
-    if ([QQApi isQQInstalled]) {
+    /**
+     *  QQApi 不做是否安装判断，在没有安装相应软件的情况下会自动跳转至Safari
+     */
         QQApiNewsObject *newsObj;
         
         if ([content isKindOfClass:[AppShareObject class]]) {
@@ -344,7 +350,6 @@
             sent = [QQApiInterface sendReq:req];
         }
         [self handleSendResult:sent];
-    }
 }
 
 /**
