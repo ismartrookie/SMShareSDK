@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6307B50A-707C-4ED5-9884-4FCCAE1573A4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JH_SMShareSDK</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F8F190E-5D1C-47AB-8F48-FA1E020CD024</key>
+		<string>http://osourcing.jinher.com:2989/svn/%E5%85%AC%E5%85%B1%E7%BB%84%E4%BB%B6IOS/trunk/08-Program/JH_SMShareSDK</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JH_SMShareSDK.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F8F190E-5D1C-47AB-8F48-FA1E020CD024</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6F8F190E-5D1C-47AB-8F48-FA1E020CD024</key>
+		<string>http://osourcing.jinher.com:2989/svn/%E5%85%AC%E5%85%B1%E7%BB%84%E4%BB%B6IOS</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://osourcing.jinher.com:2989/svn/%E5%85%AC%E5%85%B1%E7%BB%84%E4%BB%B6IOS/trunk/08-Program/JH_SMShareSDK/JH_SMShareSDK.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F8F190E-5D1C-47AB-8F48-FA1E020CD024</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F8F190E-5D1C-47AB-8F48-FA1E020CD024</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JH_SMShareSDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>
